@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <link rel="stylesheet" type="text/css" href="style.css"
+</head> 
+
+<body>
+
+    <h1><a href="./index.html">Luke Beatson</a></h1>
+    <button><a href="./index.html">Work</a></button><button><a href="./about.html">About</a></button><button><a href="./contact.html">Contact</a></button>
+<p>
+<!-- First dropdown -->
+<img src="photos/realms of ruin.jpg" alt="Image Button 1" class="image-button" onclick="toggleDropdown('dropdownContent1')">
+<div class="dropdown-content" id="dropdownContent1">
+    <p>Dropdown 1 content goes here.</p>
+    <!-- Add more content as needed -->
+</div>
+
+<!-- Second dropdown -->
+<img src="photos/son.png" alt="Image Button 2" class="image-button" onclick="toggleDropdown('dropdownContent2')">
+<div class="dropdown-content" id="dropdownContent2">
+    <p>Dropdown 2 content goes here.</p>
+    <!-- Add more content as needed -->
+
+</p>
+
+
+</div>
+
+<!-- Add more dropdowns as needed -->
+
+<script>
+    // Function to toggle the display of a dropdown content
+    function toggleDropdown(dropdownId) {
+        var dropdownContent = document.getElementById(dropdownId);
+
+        if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+        } else {
+            // Hide all other dropdowns before displaying the current one
+            hideAllDropdowns();
+            dropdownContent.style.display = "block";
+        }
+    }
+
+    // Function to hide all dropdowns
+    function hideAllDropdowns() {
+        var allDropdowns = document.querySelectorAll('.dropdown-content');
+        allDropdowns.forEach(function (dropdown) {
+            dropdown.style.display = "none";
+        });
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.addEventListener("click", function (event) {
+        if (!event.target.matches('.image-button')) {
+            hideAllDropdowns();
+        }
+    });
+</script>
+
+
+
+</body>
+</html>
