@@ -11,6 +11,7 @@ p {
 
 a {
   color: rgb(0, 0, 0);
+  text-align: center;
 } /* Globally */
 
 /* Hide the dropdown content by default */
@@ -43,19 +44,40 @@ a {
 
 /* Adjust the position of the dropdown content */
 .dropdown-side {
-  top: 100%;
-  left: 25vw;
+  top: 0%;
+  left: 55%;
 }
 
 .btn {
-  background-color: brown;
+  background-color: rgb(220, 186, 197);
   border: 3px solid black;
   border-radius: 6px;
   padding: 5px;
-  margin-right: 8px;
+  margin-right: 3px;
+  text-align: center;
 }
 
 img {
   max-width: auto;
   text-align: center;
+}
+
+.navigation-buttons {
+  margin-left:0 auto;
+  position:absolute; 
+  left: 50%;
+  transform:translateX(-50%);
+  margin-bottom: 20px;
+}
+
+.navbar {
+position: relative;
+width: 100vw;
+/* background-color: rgb(43, 255, 0); */
+height: 50px;
+}
+
+ul {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
 }
