@@ -1,5 +1,8 @@
 body {
-    background-color: rgb(49, 49, 49);
+    background-image:url('photos/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 h1 {
@@ -11,7 +14,7 @@ h1 {
   text-shadow: 6px 6px 2px #b238ca;
 }
 p {
-  text-align: center;
+  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
   font-size: x-large;
   margin: 0 10px;
@@ -55,7 +58,7 @@ a {
 /* Adjust the position of the dropdown content */
 .dropdown-side {
   top: 0%;
-  left: 10%;
+  left: 5%;
 }
 
 .btn {
@@ -101,6 +104,14 @@ ul {
 
 
 .grid-container {
+    display:grid;
+    column-gap: 10px;
+    grid-template-columns: 35% 35%;
+    margin-left: 15%;
+  }
+
+
+  .grid-container-about {
     display:grid;
     column-gap: 10px;
     grid-template-columns: 35% 35%;
