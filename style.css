@@ -1,20 +1,25 @@
-h1 {
-  font-family: "Courier New", Courier, monospace;
-  font-size: xx-large;
-  text-align: left;
-  margin: 0 10px;
+body {
+    background-color: rgb(49, 49, 49);
+}
 
+h1 {
+  font-family:"darkness rising";
+  src:url('Hanoded\ -\ Darkness\ Rising\ Regular.otf');
+  font-size: 100px;
+  text-align: left;
+  margin: 0 16%;
+  text-shadow: 6px 6px 2px #b238ca;
 }
 p {
-  text-align: left;
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: x-large;
   margin: 0 10px;
 }
 
 a {
-  color: rgb(0, 0, 0);
-  text-align: left;
+  color: rgb(255, 255, 255);
+  text-align: center;
 } /* Globally */
 
 /* Hide the dropdown content by default */
@@ -43,7 +48,7 @@ a {
   cursor: pointer;
   margin-left: auto;
   width: auto; /* Set the desired width */
-  height: 100%; /* Maintain aspect ratio */
+  height: 300%; /* Maintain aspect ratio */
   text-align: center;
 }
 
@@ -54,12 +59,15 @@ a {
 }
 
 .btn {
-  background-color: rgb(220, 186, 197);
-  border: 3px solid black;
+  font-family: "darkness rising";
+  src:url('Hanoded\ -\ Darkness\ Rising\ Regular.otf');
+  background-color: rgb(209, 152, 189);
+  border: 3px solid rgb(0, 0, 0);
   border-radius: 6px;
   padding: 5px;
   margin-right: 3px;
   text-align: center;
+  font-size: 42px;
 }
 
 img {
@@ -69,20 +77,32 @@ img {
 
 .navigation-buttons {
   margin-left:0 auto;
-  position:absolute; 
+  /* position:absolute;  */
   left: 5%;
-  transform:translateX(-50%);
+  /* transform:translateX(-50%); */
   margin-bottom: 20px;
+  margin:0px 16%;
+  margin-bottom: 10px;
 }
 
 .navbar {
-position: relative;
+/* position: relative; */
 width: 100vw;
 /* background-color: rgb(43, 255, 0); */
 height: 50px;
+/* margin:0px 16%; */
+margin-bottom: 20px;
 }
 
 ul {
   text-align: left;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+.grid-container {
+    display:grid;
+    column-gap: 10px;
+    grid-template-columns: 35% 35%;
+    margin-left: 15%;
+  }
