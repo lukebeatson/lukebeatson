@@ -73,7 +73,7 @@ a {
 /* Adjust the position of the dropdown content */
 .dropdown-side {
   top: 0%;
-  left: 5%;
+  left: 3%;
 }
 
 .btn {
@@ -140,4 +140,9 @@ footer {
   background-color: rgba(0, 0, 0, 0.397);
   text-align: center;
   color: white;
+}
+
+.img-about {
+  min-width: 300px;
+  text-align: center;
 }
