@@ -1,37 +1,39 @@
+@font-face {
+  font-family: "darkness rising";
+  src: url("Hanoded\ -\ Darkness\ Rising\ Regular.otf");
+}
+
 body {
-    background-image:url('photos/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    overflow-x: hidden;
+  background-image: url("photos/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 h1 {
-  font-family:"darkness rising";
-  src:url('Hanoded\ -\ Darkness\ Rising\ Regular.otf');
+  font-family: "darkness rising";
   font-size: 100px;
   text-align: left;
   margin: 0 16%;
   text-shadow: 6px 6px 2px #b238ca;
 }
+
 p {
   text-align: left;
-  font-family: 'Veranda';
+  font-family: "Veranda";
   font-size: x-large;
   margin: 0 10px;
-  color:white;
+  color: white;
 }
 
 ul {
-color:white;
-
-
+  color: white;
 }
 
 hr {
-  border:dashed white;
+  border: dashed white;
 }
-
 
 a {
   color: rgb(255, 255, 255);
@@ -46,7 +48,7 @@ a {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   padding: 10px;
   z-index: 1;
-  text-align:center;
+  text-align: center;
 }
 
 /* Style the image as a button */
@@ -76,7 +78,6 @@ a {
 
 .btn {
   font-family: "darkness rising";
-  src:url('Hanoded\ -\ Darkness\ Rising\ Regular.otf');
   background-color: rgba(209, 152, 189, 0);
   /* border: 3px dotted rgb(248, 248, 248); */
   /* idk if I like the border but eh */
@@ -93,22 +94,22 @@ img {
 }
 
 .navigation-buttons {
-  margin-left:0 auto;
+  margin-left: 0 auto;
   /* position:absolute;  */
   left: 5%;
   /* transform:translateX(-50%); */
   margin-bottom: 20px;
-  margin:0px 16%;
+  margin: 0px 16%;
   margin-bottom: 10px;
 }
 
 .navbar {
-/* position: relative; */
-width: 100vw;
-/* background-color: rgb(43, 255, 0); */
-height: 50px;
-/* margin:0px 16%; */
-margin-bottom: 20px;
+  /* position: relative; */
+  width: 100vw;
+  /* background-color: rgb(43, 255, 0); */
+  height: 50px;
+  /* margin:0px 16%; */
+  margin-bottom: 20px;
 }
 
 ul {
@@ -116,30 +117,27 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .grid-container {
-    display:grid;
-    column-gap: 10px;
-    grid-template-columns: 35% 35%;
-    margin-left: 15%;
-  }
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 35% 35%;
+  margin-left: 15%;
+}
 
+.grid-container-about {
+  display: grid;
+  column-gap: 10px;
+  grid-template-columns: 35% 35%;
+  margin-left: 15%;
+}
 
-  .grid-container-about {
-    display:grid;
-    column-gap: 10px;
-    grid-template-columns: 35% 35%;
-    margin-left: 15%;
-  }
-
-
-  footer {
-    position: fixed; 
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 0.397);
-    text-align: center;
-    color:white;
-  }
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.397);
+  text-align: center;
+  color: white;
+}
