@@ -13,20 +13,18 @@ body {
 
 h1 {
   font-family: "darkness rising";
-  font-size: 5vw;
+  font-size: 100px;
   text-align: left;
   margin: 0 16%;
   text-shadow: 6px 6px 2px #b238ca;
-  white-space: nowrap;
 }
 
 p {
   text-align: left;
   font-family: "Veranda";
-  font-size: 1.5vw;
+  font-size: x-large;
   margin: 0 10px;
   color: white;
-  white-space: nowrap;
 }
 
 ul {
@@ -67,8 +65,8 @@ a {
 .image-button {
   cursor: pointer;
   margin-left: auto;
-  width: 100%; /* Set the desired width */
-  height: auto; /* Maintain aspect ratio */
+  width: auto; /* Set the desired width */
+  height: 300%; /* Maintain aspect ratio */
   text-align: center;
 }
 
@@ -122,7 +120,6 @@ ul {
 .grid-container {
   display: grid;
   column-gap: 10px;
-  row-gap: 10px;
   grid-template-columns: 35% 35%;
   margin-left: 15%;
 }
@@ -132,7 +129,6 @@ ul {
   column-gap: 10px;
   grid-template-columns: 35% 35%;
   margin-left: 15%;
-  z-index: 1;
 }
 
 footer {
@@ -141,20 +137,12 @@ footer {
   left: 0;
   right: 0;
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.644);
+  background-color: rgba(0, 0, 0, 0.397);
   text-align: center;
   color: white;
 }
 
 .img-about {
-  min-width: 100%;
+  min-width: 300px;
   text-align: center;
-  z-index: -1;
 }
-
-
-
-/* to do
-
-fix formatting
-fix  */
