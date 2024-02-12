@@ -30,6 +30,10 @@ p {
 }
 
 ul {
+  text-align: left;
+  font-family: "Veranda";
+  font-size: 1.5vw;
+  margin: 0 10px;
   color: white;
 }
 
@@ -38,7 +42,11 @@ hr {
 }
 
 a {
-  color: rgb(255, 255, 255);
+  font-family: "Veranda";
+  font-size: 1.5vw;
+  margin: 0 10px;
+  color: white;
+  white-space: nowrap;
   text-align: center;
 } /* Globally */
 
@@ -46,18 +54,24 @@ a {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #000000a1;
+  background-color: rgba(0, 0, 0, 0.384);
+  backdrop-filter: blur(10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  padding: 10px;
+  /* padding: 10px; */
   z-index: 1;
   text-align: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.685) rgba(128, 128, 128, 0);
 }
 
 /* Style the image as a button */
 .image-container {
   position: relative;
   display: inline-block;
-  height: 20vh;
+  /* height: 20vh; */
   width: 100%;
   /* background-color: red; */
   text-align: left;
@@ -75,7 +89,7 @@ a {
 /* Adjust the position of the dropdown content */
 .dropdown-side {
   top: 0%;
-  left: 3%;
+  left: 0%;
 }
 
 .btn {
@@ -83,11 +97,11 @@ a {
   background-color: rgba(209, 152, 189, 0);
   /* border: 3px dotted rgb(248, 248, 248); */
   /* idk if I like the border but eh */
-  border-radius: 6px;
-  padding: 2px;
-  margin-right: 10px;
+  border-radius: .1vw;
+  padding: .1vw;
+  margin-right: .5vw;
   text-align: center;
-  font-size: 42px;
+  font-size: 3vw;
 }
 
 img {
@@ -100,9 +114,9 @@ img {
   /* position:absolute;  */
   left: 5%;
   /* transform:translateX(-50%); */
-  margin-bottom: 20px;
   margin: 0px 16%;
-  margin-bottom: 10px;
+
+  
 }
 
 .navbar {
@@ -111,7 +125,7 @@ img {
   /* background-color: rgb(43, 255, 0); */
   height: 50px;
   /* margin:0px 16%; */
-  margin-bottom: 20px;
+  margin-bottom: 1vw;
 }
 
 ul {
@@ -152,6 +166,14 @@ footer {
   z-index: -1;
 }
 
+
+.header-logo{
+  font-family: "darkness rising";
+  font-size: 5vw;
+  text-align: left;
+  text-shadow: 6px 6px 2px #b238ca;
+  white-space: nowrap;
+}
 
 
 /* to do
