@@ -1,165 +1,157 @@
-<!--copypasta index to here to test grid etc-->
-
-
 <!DOCTYPE html>
 <html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <head>
-    <title>Luke Beatson - TestingWork</title>
+    <title>Luke Beatson - Work</title>
+
+    <style>
+        .left1, .right1,
+        .left2, .right2 {
+          float: inline-start;
+          width: 30%;
+        }
+        
+        /* .left2, .right2 {
+          float: inline-start;
+          width:30%;
+        } */
+        
+        /* Use a media query to add a breakpoint at 800px: */
+        @media screen and (max-width: 800px) {
+          .left1, .right1 {
+            width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
+          }
+        }
+
+        @media screen and (max-width: 800px) {
+          .left2, .right2 {
+            width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
+          }
+        }
+        </style> 
   
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <h1>
-      <a style="text-decoration: none" href="./index.html">Luke Beatson</a>
-    </h1>  <br><br><br>
-    <div class="navbar">
-      <div class="navigation-buttons">
-        <a class="btn" style="text-decoration: none" href="./index.html">Work</a
-        ><a class="btn" style="text-decoration: none" href="./about.html">About</a
-        ><a class="btn" style="text-decoration: none" href="./contact.html">Contact</a
-      >
-      </div>
-    </div>
+    <!-- <br><br><br><br><br><br><br><br><br><br><br> -->
+        <h1>
+        <a class="header-logo" style="text-decoration: none" href="./index.html">Luke Beatson</a>
+        </h1>
+        
+        <br>
+        <div class="navbar">
+        <div class="navigation-buttons">
+            <a class="btn" style="text-decoration: none" href="./index.html">Work</a>
+            <a class="btn" style="text-decoration: none;">//</a>
+            <a class="btn" style="text-decoration: none" href="./about.html">About</a>
+            <!-- <a class="btn" style="text-decoration: none;">//</a>
+            <a class="btn" style="text-decoration: none" href="./capture.html">Capture</a> -->
+        </div>
+        </div>
 
 
-
-
-<div class="grid-container">
-    <div>
-        <!-- First dropdown to the side -->
+<div class="left1">
     <p>
-    <a
-        href="https://www.frontier.co.uk/our-games/realms-of-ruin"
-    >
-        Warhammer Age of Sigmar: Realms of Ruin
-    </a>
-
-    <div class="image-container">
-    <img src="photos/realms of ruin.jpg" alt="Image Button 1" class="image-button" onclick="toggleDropdown('dropdownContent1')">
-    <div class="dropdown-content dropdown-side" id="dropdownContent1">
-        <p>Full Functionality QA</p>
-        <P>Beta - Post Release</P>     
-            <p>
-            Experience & Responsibilities:
-            <ul>
-                <li>Reporting and Tracking Bugs within a Database</li>
-                <li>Summarizing Data from Bug Database to Evaluate Personal Performance</li>
-                <li>Multiplayer Testing</li>
-                <li>9th Gen Console Testing</li>
-                <li>Denuvo Testing</li>
-                <li>Debugging and Comparing Crash Reports</li>
-                <li>Minor Task Management</li>
-                <li>Writing and Executing Testrails</li>
-                <li>Performing Release Critical Checks across Multiple Submissions</li>
-                <li>Coordinating with a Small Team through Regular Meetings</li>
-                <li>Liaising with Multiple Departments</li>
-                <li>Working Under Pressure towards Strict Deadlines</li>
-                <li>Managing Rapidly Shifting Priorities</li>
-                </ul>
-            </p>
-        <!-- Add more content as needed -->
-    </div>
-    </div>
+        <div class="image-container" >
+            <img src="photos/realms of ruin.jpg" alt="Image Button 1" class="image-button" onclick="toggleDropdown('dropdownContent1')">
+            <div class="dropdown-content dropdown-side" id="dropdownContent1">
+                <p>Full Functionality QA</p>
+                <P>Beta - Post Release</P>     
+                    <p>
+                    Experience & Responsibilities: <br>
+                        • Reporting and Tracking Bugs within a Database<br>
+                        • Summarizing Data from Bug Database to Evaluate Personal Performance<br>
+                        • Multiplayer Testing<br>
+                        • 9th Gen Console Testing<br>
+                        • Denuvo Testing<br>
+                        • Debugging and Comparing Crash Reports<br>
+                        • Minor Task Management<br>
+                        • Writing and Executing Testrails<br>
+                        • Performing Release Critical Checks across Multiple Submissions<br>
+                        • Coordinating with a Small Team through Regular Meetings<br>
+                        • Liaising with Multiple Departments<br>
+                        • Working Under Pressure towards Strict Deadlines<br>
+                        • Managing Rapidly Shifting Priorities
+                        <a href="https://www.aosrealmsofruin.com/">Official Website</a>
+                    </p>
+            </div>
+        </div>
     </p>
 </div>
-    <div>
-        <!-- Second dropdown to the side -->
+
+<div class="right1">
+   <p>
+        <div class="image-container">
+            <img src="photos/deliver us mars.jpg" alt="Image Button 2" class="image-button" onclick="toggleDropdown('dropdownContent2')">
+            <div class="dropdown-content dropdown-side" id="dropdownContent2">
+                <p>Full Functionality QA</p>
+                <P>Alpha - Post Release</P>     
+                    <p>
+                        Experience & Responsibilities:<br>
+                        • Reporting and Tracking Bugs within a Database<br>
+                        • Leading a team of tester to look into and report on player submitted issues post-release<br>
+                        • Summarizing Data from Bug Database to Evaluate Personal Performance<br>
+                        • 8th & 9th Gen Console Testing<br>
+                        • Denuvo Testing<br>
+                        • Debugging and Comparing Crash Reports<br>
+                        • Minor Task Management<br>
+                        • Writing and Executing Testrails<br>
+                        • Performing Release Critical Checks across Multiple Submissions<br>
+                        • Coordinating with a Small Team through Regular Meetings<br>
+                        • Working Under Pressure towards Strict Deadlines<br>
+                        • Managing Rapidly Shifting Priorities<br>
+                        <a href="https://www.deliverusmars.com/">Official Website</a>
+                    </p>
+                </div>
+        </div>
+    </p>
+</div>
+
+<div class="left2"></div>
     <p>
-    <a
-        href="https://www.deliverusmars.com/"
-    >
-        Deliver Us Mars
-    </a>
+        <div class="image-container" class="right">
+            <img src="photos/stranded.jpg" alt="Image Button 3" class="image-button" onclick="toggleDropdown('dropdownContent3')">
+            <div class="dropdown-content dropdown-side" id="dropdownContent3">
+                <p>Full Functionality QA</p>
+                <P>Beta - Early Access Release</P>     
+                    <p>
+                        Experience & Responsibilities:<br>
+                     • Reporting and Tracking Bugs within a Database<br>
+                        • Reporting and Tracking Bugs within a Database<br>
+                        • Summarizing Data from Bug Database to Evaluate Personal Performance<br>
+                        • 8th Gen Console Testing<br>
+                        • Denuvo Testing<br>
+                        • Debugging and Comparing Crash Reports<br>
+                        • Performing Release Critical Checks across Multiple Submissions<br>
+                        • Coordinating with a Small Team through Regular Meetings<br>
+                        • Working Under Pressure towards Strict Deadlines<br>
+                        • Managing Rapidly Shifting Priorities<br>
+                        <a href="https://www.strandedaliendawn.com/">Official Website</a>
+                </p>
+            </div>
+        </div>
     </p>
-    <div class="image-container">
-    <img src="photos/deliver us mars.jpg" alt="Image Button 2" class="image-button" onclick="toggleDropdown('dropdownContent2')">
-    <div class="dropdown-content dropdown-side" id="dropdownContent2">
-        <p>Full Functionality QA</p>
-        <P>Alpha - Post Release</P>     
-        <p>
-            Experience & Responsibilities:
-            <ul>
-            <li>Reporting and Tracking Bugs within a Database</li>
-            <li>Leading a team of tester to look into and report on player submitted issues post-release</li>
-            <li>Summarizing Data from Bug Database to Evaluate Personal Performance</li>
-            <li>8th & 9th Gen Console Testing</li>
-            <li>Denuvo Testing</li>
-            <li>Debugging and Comparing Crash Reports</li>
-            <li>Minor Task Management</li>
-            <li>Writing and Executing Testrails</li>
-            <li>Performing Release Critical Checks across Multiple Submissions</li>
-            <li>Coordinating with a Small Team through Regular Meetings</li>
-            <li>Working Under Pressure towards Strict Deadlines</li>
-            <li>Managing Rapidly Shifting Priorities</li>
-            </ul>
-            </p>
-        <!-- Add more content as needed -->
-    </div>
-    </div>
-    </p>
+</div>
 
-    </div>
-    <div>
-        <!-- Third dropdown to the side -->
+<div class="right2">
     <p>
-    <a
-        href="https://www.strandedaliendawn.com/"
-    >
-        Stranded: Alien Dawn
-    </a>
+        <div class="image-container">
+            <img src="photos/chaosgate.jpg" alt="Image Button 4" class="image-button" onclick="toggleDropdown('dropdownContent4')">
+            <div class="dropdown-content dropdown-side" id="dropdownContent4">
+                <p>UX Tester</p>
+                <P>Beta</P>     
+                    <p>
+                    Experience & Responsibilities:<br>
+                    • Stress Testing over long periods of time? idk<br>
+                    • Stressing over long periods of time (truueeeee)<br>
+                    • Testing gameplay difficulty tweaks throughout natural gameplay
+                    <!-- put actual things here lmao -->
+                    <a href="https://www.chaosgate.com/">Official Website</a>
+                </p>
+            </div>
+        </div>
     </p>
-    <div class="image-container">
-    <img src="photos/stranded.jpg" alt="Image Button 3" class="image-button" onclick="toggleDropdown('dropdownContent3')">
-    <div class="dropdown-content dropdown-side" id="dropdownContent3">
-        <p>Full Functionality QA</p>
-        <P>Beta - Early Access Release</P>     
-        <p>
-            Experience & Responsibilities:
-            <ul>
-            <li>Reporting and Tracking Bugs within a Database</li>
-            <li>Reporting and Tracking Bugs within a Database</li>
-            <li>Summarizing Data from Bug Database to Evaluate Personal Performance</li>
-            <li>8th Gen Console Testing</li>
-            <li>Denuvo Testing</li>
-            <li>Debugging and Comparing Crash Reports</li>
-            <li>Performing Release Critical Checks across Multiple Submissions</li>
-            <li>Coordinating with a Small Team through Regular Meetings</li>
-            <li>Working Under Pressure towards Strict Deadlines</li>
-            <li>Managing Rapidly Shifting Priorities</li>
-            </ul>
-            </p>
-        <!-- Add more content as needed -->
-    </div>
-    </div>
-
-    </div>
-    <div>
-        <!-- Fourth dropdown to the side -->
-    <p>
-    <a
-        href="https://www.chaosgate.com/"
-    >
-        Warhammer 40,000 Chaosgate Daemonhunters
-    </a>
-    </p>
-    <div class="image-container">
-    <img src="photos/chaosgate.jpg" alt="Image Button 4" class="image-button" onclick="toggleDropdown('dropdownContent4')">
-    <div class="dropdown-content dropdown-side" id="dropdownContent4">
-        <p>UX Tester</p>
-        <P>Beta</P>     
-        <p>
-            Experience & Responsibilities:
-        </p>
-        <!-- Add more content as needed -->
-    </div>
-    </div>
-
-    </div>
-
-
-    </div>
-
-
+</div>
 
 
 <!-- Add more dropdowns as needed -->
@@ -195,4 +187,28 @@
 </script>
 
 </body>
+
+
+<footer>
+ <br>
+ <a 
+    style="text-decoration: none;"
+    href="https://www.linkedin.com/in/luke-beatson-27bb46108/"
+    >LinkedIn
+</a>
+
+ <a
+    style="text-decoration: none"
+    href="mailto:lukebeatson@hotmail.co.uk? title&body=What's poppinnggggggg"
+    >Contact
+</a>
+
+ <a
+    style="text-decoration:none"
+    href="https://www.mobygames.com/person/1286563/luke-beatson/credits/"
+     >Credits
+</a>
+</footer>
+
+
 </html>

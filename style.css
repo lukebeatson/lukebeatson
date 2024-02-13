@@ -17,6 +17,9 @@ h1 {
   text-align: left;
   margin: 0 16%;
   text-shadow: 6px 6px 2px #b238ca;
+  /* background-color: red; */
+  /* line-height: 0.5vw;
+  margin-bottom: 5px; */
 }
 
 p {
@@ -25,12 +28,13 @@ p {
   font-size: x-large;
   margin: 0 10px;
   color: white;
+  /* background-color: pink; */
 }
 
 ul {
   text-align: left;
   font-family: "Veranda";
-  font-size: 1.5vw;
+  font-size: 100px;
   margin: 0 10px;
   color: white;
 }
@@ -41,7 +45,7 @@ hr {
 
 a {
   font-family: "Veranda";
-  font-size: 1.5vw;
+  font-size: medium;
   margin: 0 10px;
   color: white;
   white-space: nowrap;
@@ -69,8 +73,8 @@ a {
 .image-container {
   position: relative;
   display: inline-block;
-  /* height: 20vh; */
-  width: 100%;
+  height: auto;
+  max-width: 100%;
   /* background-color: red; */
   text-align: left;
   margin: 5px 5px; /* Add some space between image containers */
@@ -99,7 +103,7 @@ a {
   padding: .1vw;
   margin-right: .5vw;
   text-align: center;
-  font-size: 3vw;
+  font-size: 40px;
 }
 
 img {
@@ -113,17 +117,16 @@ img {
   left: 5%;
   /* transform:translateX(-50%); */
   margin: 0px 16%;
-
+/* background-color: yellow; */
   
 }
 
 .navbar {
   /* position: relative; */
   width: 100vw;
-  /* background-color: rgb(43, 255, 0); */
   height: 50px;
-  /* margin:0px 16%; */
   margin-bottom: 1vw;
+  /* background-color: orange; */
 }
 
 ul {
@@ -167,7 +170,7 @@ footer {
 
 .header-logo{
   font-family: "darkness rising";
-  font-size: 5vw;
+  font-size: 50px;
   text-align: left;
   text-shadow: 6px 6px 2px #b238ca;
   white-space: nowrap;
