@@ -3,20 +3,43 @@
   <head>
     <title>Luke Beatson - About</title>
   
+    <style>
+      .left, .right{
+        float: inline-start;
+        width: 45%;
+      }
+      .hidden{
+      float:inline-start;
+      width: 0%;
+      }
+      @media screen and (max-width: 800px) {
+        .left, .hidden {
+          width: 90%;
+        }
+      }
+      @media screen and (max-width:800px) {
+        .right {
+          width:0%;
+        }
+      }
+      </style> 
+
+
+
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
     <!-- <br><br><br><br><br><br><br><br><br><br><br> -->
         <h1>
-        <a class="header-logo" style="text-decoration: none" href="./index.html">Luke Beatson</a>
+        <a class="header-logo" style="text-decoration: none" href="./index.html">LUKE BEATSON</a>
         </h1>
         
         <br>
         <div class="navbar">
         <div class="navigation-buttons">
-            <a class="btn" style="text-decoration: none" href="./index.html">Work</a>
+            <a class="btn" style="text-decoration: none" href="./index.html">WORK</a>
             <a class="btn" style="text-decoration: none;">//</a>
-            <a class="btn" style="text-decoration: none" href="./about.html">About</a>
+            <a class="btn" style="text-decoration: none" href="./about.html">ABOUT</a>
             <!-- <a class="btn" style="text-decoration: none;">//</a>
             <a class="btn" style="text-decoration: none" href="./capture.html">Capture</a> -->
         </div>
@@ -24,9 +47,15 @@
 
 <div style="margin: 0 16%;margin-top:3vh;">
 
+  <div class="hidden">
+    <picture>
+    <source media="(max-width:800px)" srcset="photos/aboutpic.png">
+    <img class="img-about" src="photos/blank.png" style="max-width: 60%;">
+    </picture>      
+  </div>
 
-<div class="grid">
-    <div class="grid-container-about">
+
+    <div class="left">
         <p style="color:white;">
           I am a Hard Working and Effective QA Functionality Tester looking to move forward
           in my career and deepen my experience in QA. My adaptability and productivity led
@@ -39,22 +68,24 @@
            • Hansoft<br>
            • Mantis<br>
            • Testrail<br>
-           • Confluence<br>
+           • Confluence<br> 
            • Basic HTML/CSS <br>
            • OBS<br>
            • Teams<br>
-           • Microsoft Office<br>
+           • Microsoft Office<br><br><br><br><br>
         </p>
-
-    
-      <img class="img-about" src="photos/aboutpic.png" style="max-width: 60%;">
-
-    </div>
-  </div>
+      </div>
+      <div class="right">
+        <picture>
+          <source media="(max-width:800px)" srcset="photos/blank2.png">
+          <img class="img-about" src="photos/aboutpic.png" style="max-width: 60%;">
+        </picture>
+      </div>
+<br><br><br>
 
 </div>
 
-  </body>
+</body>
 
 
   <footer>

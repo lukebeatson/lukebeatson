@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "darkness rising";
-  src: url("Hanoded\ -\ Darkness\ Rising\ Regular.otf");
+  font-family: "blackbit";
+  src: url("Blackbit.otf");
 }
 
 body {
@@ -12,11 +12,11 @@ body {
 }
 
 h1 {
-  font-family: "darkness rising";
+  font-family: "blackbit";
   font-size: 100px;
   text-align: left;
   margin: 0 16%;
-  text-shadow: 6px 6px 2px #b238ca;
+  /* text-shadow: 6px 6px 2px #b238ca; */
   /* background-color: red; */
   line-height: 4vw;
   margin-bottom: 5px;
@@ -101,14 +101,15 @@ h3{
 }
 
 .btn {
-  font-family: "darkness rising";
+  font-family: "blackbit";
   background-color: rgba(209, 152, 189, 0);
   /* border: 3px dotted rgb(248, 248, 248); */
   /* idk if I like the border but eh */
   border-radius: .1vw;
   padding: .1vw;
   text-align: left;
-  font-size: 30px;
+  font-size: 6vw;
+  line-height: 1vw;
   /* background-color: blue; */
 }
 
@@ -163,6 +164,7 @@ footer {
   text-align: center;
   color: white;
   z-index: 2;
+  font-family: 'Lucida Sans Unicode';
 }
 
 .img-about {
@@ -173,10 +175,10 @@ footer {
 
 
 .header-logo{
-  font-family: "darkness rising";
-  font-size: calc(30px + 4vw);
+  font-family: "blackbit";
+  font-size: calc(30px + 8vw);
   text-align: left;
-  text-shadow: 6px 6px 2px #b238ca;
+  /* text-shadow: 6px 6px 2px #b238ca; */
   white-space: nowrap;
   /* background-color: red; */
 
