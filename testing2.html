@@ -2,7 +2,7 @@
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <head>
-    <title>Luke Beatson - Work</title>
+    <title>Luke Beatson - TestingWork</title>
 
     <style>
         .left1, .right1,
@@ -10,22 +10,19 @@
           float: inline-start;
           width: 45%;
         }
-        
-        /* .left2, .right2 {
-          float: inline-start;
-          width:30%;
-        } */
-        
-        /* Use a media query to add a breakpoint at 800px: */
+        .right2{
+            margin-bottom: 6vw;
+        }
+    
         @media screen and (max-width: 800px) {
           .left1, .right1 {
-            width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
+            width: 90%;
           }
         }
 
         @media screen and (max-width: 800px) {
           .left2, .right2 {
-            width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
+            width: 90%;
           }
         }
         </style> 
@@ -33,17 +30,16 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <!-- <br><br><br><br><br><br><br><br><br><br><br> -->
         <h1>
-        <a class="header-logo" style="text-decoration: none" href="./index.html">Luke Beatson</a>
+        <a class="header-logo" style="text-decoration: none" href="./index.html">LUKE BEATSON</a>
         </h1>
         
         <br>
         <div class="navbar">
         <div class="navigation-buttons">
-            <a class="btn" style="text-decoration: none" href="./index.html">Work</a>
+            <a class="btn" style="text-decoration: none" href="./index.html">WORK</a>
             <a class="btn" style="text-decoration: none;">//</a>
-            <a class="btn" style="text-decoration: none" href="./about.html">About</a>
+            <a class="btn" style="text-decoration: none" href="./about.html">ABOUT</a>
             <!-- <a class="btn" style="text-decoration: none;">//</a>
             <a class="btn" style="text-decoration: none" href="./capture.html">Capture</a> -->
         </div>
@@ -60,8 +56,8 @@
             <div class="dropdown-content dropdown-side" id="dropdownContent1">
                 <h3>Full Functionality QA</h3>
                 <h3>Beta - Post Release</h3>     
-                    <p>
-                    Experience & Responsibilities: <br>
+                <p class="dropdowntext">
+                        Experience & Responsibilities: <br>
                         • Reporting and Tracking Bugs within a Database<br>
                         • Summarizing Data from Bug Database to Evaluate Personal Performance<br>
                         • Multiplayer Testing<br>
@@ -89,7 +85,7 @@
             <div class="dropdown-content dropdown-side" id="dropdownContent2">
                 <h3>Full Functionality QA</h3>
                 <h3>Alpha - Post Release</h3>     
-                    <p>
+                <p class="dropdowntext">
                         Experience & Responsibilities:<br>
                         • Reporting and Tracking Bugs within a Database<br>
                         • Leading a team of tester to look into and report on player submitted issues post-release<br>
@@ -117,7 +113,7 @@
             <div class="dropdown-content dropdown-side" id="dropdownContent3">
                 <h3>Full Functionality QA</h3>
                 <h3>Beta - Early Access Release</h3>     
-                    <p>
+                    <p class="dropdowntext">
                         Experience & Responsibilities:<br>
                      • Reporting and Tracking Bugs within a Database<br>
                         • Reporting and Tracking Bugs within a Database<br>
@@ -143,7 +139,7 @@
             <div class="dropdown-content dropdown-side" id="dropdownContent4">
                <h3>UX Tester</h3>
                 <h3>-Beta-</h3>
-                    <p>
+                <p class="dropdowntext">
                     Experience & Responsibilities:<br>
                     • Stress Testing over long periods of time? idk<br>
                     • Stressing over long periods of time (truueeeee)<br>
@@ -163,20 +159,17 @@
 
 </p>
 <script>
-  // Function to toggle the display of a dropdown content
   function toggleDropdown(dropdownId) {
       var dropdownContent = document.getElementById(dropdownId);
 
       if (dropdownContent.style.display === "block") {
           dropdownContent.style.display = "none";
       } else {
-          // Hide all other dropdowns before displaying the current one
           hideAllDropdowns();
           dropdownContent.style.display = "block";
       }
   }
 
-  // Function to hide all dropdowns
   function hideAllDropdowns() {
       var allDropdowns = document.querySelectorAll('.dropdown-content');
       allDropdowns.forEach(function (dropdown) {
@@ -184,7 +177,6 @@
       });
   }
 
-  // Close the dropdown if the user clicks outside of it
   window.addEventListener("click", function (event) {
       if (!event.target.matches('.image-button')) {
           hideAllDropdowns();
@@ -196,24 +188,24 @@
 
 
 <footer>
- <br>
- <a 
-    style="text-decoration: none;"
-    href="https://www.linkedin.com/in/luke-beatson-27bb46108/"
-    >LinkedIn
-</a>
 
- <a
-    style="text-decoration: none"
-    href="mailto:lukebeatson@hotmail.co.uk? title&body=What's poppinnggggggg"
-    >Contact
-</a>
+        <a class="footer-text"
+        style="text-decoration: none;"
+        href="https://www.linkedin.com/in/luke-beatson-27bb46108/"
+        >LinkedIn
+    </a>
 
- <a
-    style="text-decoration:none"
-    href="https://www.mobygames.com/person/1286563/luke-beatson/credits/"
-     >Credits
-</a>
+    <a class="footer-text"
+        style="text-decoration: none"
+        href="mailto:lukebeatson@hotmail.co.uk? title&body=What's poppinnggggggg"
+        >Contact
+    </a>
+
+    <a class="footer-text"
+        style="text-decoration:none"
+        href="https://www.mobygames.com/person/1286563/luke-beatson/credits/"
+        >Credits
+    </a>
 </footer>
 
 
